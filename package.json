@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "useWorkspaces": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "npmClient": "yarn",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist --strict",
+    "orders": "cd packages/orders && yarn start",
+    "test": "cd packages/test && yarn start",
+    "orders:build": "cd packages/orders && yarn start",
+    "test:build": "cd packages/test && yarn start"    
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
